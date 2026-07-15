@@ -261,7 +261,7 @@ function montarCorpoEmail(
   <div style="max-width:680px;margin:20px auto;background:#fff;border-radius:8px;overflow:hidden;border:1px solid #E5E7EB;">
     <!-- Header -->
     <div style="background:${headerBg};padding:20px 24px;border-bottom:3px solid ${headerBorder};">
-      <h1 style="margin:0 0 4px;font-size:18px;color:#111827;">LabCare — Notificação de Manutenções</h1>
+      <h1 style="margin:0 0 4px;font-size:18px;color:#111827;">IST Sigma — Notificação de Manutenções</h1>
       <p style="margin:0;font-size:14px;color:#6B7280;">
         ${labNome} — ${unidadeNome}
       </p>
@@ -296,7 +296,7 @@ function montarCorpoEmail(
     <!-- Footer -->
     <div style="padding:16px 24px;background:#F9FAFB;border-top:1px solid #E5E7EB;">
       <p style="margin:0;font-size:12px;color:#9CA3AF;">
-        E-mail gerado automaticamente pelo LabCare — Sistema de Manutenção Preventiva.
+        E-mail gerado automaticamente pelo IST Sigma — Sistema Integrado de Gestão de Manutenção de Ativos.
         <br>Não responda a esta mensagem.
       </p>
     </div>
@@ -465,7 +465,7 @@ export async function enviarNotificacoes(): Promise<ResultadoNotificacao> {
       const labNome = pendenciasLab[0].labNome;
       const unidadeNome = pendenciasLab[0].unidadeNome;
 
-      const subject = `LabCare — ${pendenciasLab.length} manutenção(ões) pendente(s) — ${labNome}`;
+      const subject = `IST Sigma — ${pendenciasLab.length} manutenção(ões) pendente(s) — ${labNome}`;
       const htmlBody = montarCorpoEmail(labNome, unidadeNome, pendenciasLab);
 
       try {

@@ -114,7 +114,7 @@ export default function ManutencoesPage() {
       <Card>
         <CardContent className="pt-6">
           <div className="mb-4 flex flex-wrap items-center gap-3">
-            <div className="relative flex-1 min-w-[200px]">
+            <div className="relative flex-1 w-full sm:min-w-[200px]">
               <Search className="absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
                 placeholder="Buscar por patrimônio ou serviço..."
@@ -133,7 +133,7 @@ export default function ManutencoesPage() {
                 setPage(0);
               }}
             >
-              <SelectTrigger className="w-[160px]">
+              <SelectTrigger className="w-full sm:w-[160px]">
                 <SelectValue placeholder="Status" />
               </SelectTrigger>
               <SelectContent>
@@ -203,7 +203,7 @@ export default function ManutencoesPage() {
               </div>
 
               {totalPages > 1 && (
-                <div className="mt-3 flex items-center justify-between">
+                <div className="mt-3 flex flex-col sm:flex-row items-center justify-between gap-2">
                   <p className="text-sm text-muted-foreground">
                     {filtered.length} manutenção(ões) — Página {page + 1} de {totalPages}
                   </p>

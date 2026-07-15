@@ -452,7 +452,7 @@ export default function AuditoriaPage() {
               </div>
 
               {totalPages > 1 && (
-                <div className="mt-3 flex items-center justify-between">
+                <div className="mt-3 flex flex-col sm:flex-row items-center justify-between gap-2">
                   <p className="text-sm text-muted-foreground">
                     {filtered.length} registro(s) — Página {page + 1} de {totalPages}
                   </p>

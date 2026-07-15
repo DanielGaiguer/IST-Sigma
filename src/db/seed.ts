@@ -56,7 +56,7 @@ async function seed() {
     .values([
       {
         id: UUID.usuarioAdmin,
-        nome: "Admin LabCare",
+        nome: "Admin IST Sigma",
         email: "admin@labcare.com",
         senhaHash,
         perfil: "admin",

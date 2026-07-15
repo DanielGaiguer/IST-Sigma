@@ -1,5 +1,5 @@
 /**
- * Maintenance Engine — Lógica de negócio central do LabCare.
+ * Maintenance Engine — Lógica de negócio central do IST Sigma.
  *
  * Este módulo é independente de rotas HTTP e pode ser chamado por API Routes,
  * Server Actions, cron jobs ou qualquer outro contexto server-side.

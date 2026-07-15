@@ -30,7 +30,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
       <Sidebar collapsed={collapsed} onMouseEnter={expand} onMouseLeave={collapse} />
       <Header collapsed={collapsed} />
       <main className={`pt-14 transition-all duration-200 ${collapsed ? "lg:pl-16" : "lg:pl-64"}`}>
-        <div className="p-4 sm:p-6">{children}</div>
+        <div className="p-4 sm:p-6 pb-20 sm:pb-6">{children}</div>
       </main>
     </div>
   );

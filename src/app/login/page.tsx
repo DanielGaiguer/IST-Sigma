@@ -50,8 +50,8 @@ function LoginForm() {
   return (
     <Card className="w-full max-w-md">
       <CardHeader className="text-center">
-        <CardTitle className="text-2xl font-bold">LabCare</CardTitle>
-        <CardDescription>Sistema de Manutenção Preventiva</CardDescription>
+        <CardTitle className="text-2xl font-bold">IST Sigma</CardTitle>
+        <CardDescription>Sistema Integrado de Gestão de Manutenção de Ativos</CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">

@@ -425,7 +425,7 @@ export default function PlanosManutencaoPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
         <div>
           <h1 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
             <ClipboardList className="h-6 w-6 text-blue-600" />
@@ -435,7 +435,7 @@ export default function PlanosManutencaoPage() {
             Gerencie os planos preventivos e seus itens de manutenção.
           </p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           <Button variant="outline" onClick={() => setSimulateOpen(true)} className="gap-1.5">
             <Eye className="h-4 w-4" />
             Simular Plano

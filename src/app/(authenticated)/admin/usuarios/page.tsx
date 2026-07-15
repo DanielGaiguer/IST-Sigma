@@ -219,7 +219,7 @@ export default function UsuariosPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
         <div>
           <h1 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
             <Users className="h-6 w-6 text-blue-600" />
@@ -317,7 +317,7 @@ export default function UsuariosPage() {
               </div>
 
               {totalPages > 1 && (
-                <div className="mt-3 flex items-center justify-between">
+                <div className="mt-3 flex flex-col sm:flex-row items-center justify-between gap-2">
                   <p className="text-sm text-muted-foreground">
                     {filtered.length} usuário(s) — Página {page + 1} de {totalPages}
                   </p>

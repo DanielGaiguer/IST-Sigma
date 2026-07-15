@@ -109,7 +109,7 @@ export default function EquipamentosPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
         <div>
           <h1 className="flex items-center gap-2 text-2xl font-bold tracking-tight">
             <Wrench className="h-6 w-6 text-blue-600" />
@@ -130,7 +130,7 @@ export default function EquipamentosPage() {
       <Card>
         <CardContent className="pt-6">
           <div className="mb-4 flex flex-wrap items-center gap-3">
-            <div className="relative flex-1 min-w-[200px]">
+            <div className="relative flex-1 w-full sm:min-w-[200px]">
               <Search className="absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
                 placeholder="Buscar por patrimônio..."
@@ -149,7 +149,7 @@ export default function EquipamentosPage() {
                 setPage(0);
               }}
             >
-              <SelectTrigger className="w-[160px]">
+              <SelectTrigger className="w-full sm:w-[160px]">
                 <SelectValue placeholder="Situação" />
               </SelectTrigger>
               <SelectContent>
@@ -167,7 +167,7 @@ export default function EquipamentosPage() {
                 setPage(0);
               }}
             >
-              <SelectTrigger className="w-[160px]">
+              <SelectTrigger className="w-full sm:w-[160px]">
                 <SelectValue placeholder="Fabricante" />
               </SelectTrigger>
               <SelectContent>
@@ -186,7 +186,7 @@ export default function EquipamentosPage() {
                 setPage(0);
               }}
             >
-              <SelectTrigger className="w-[160px]">
+              <SelectTrigger className="w-full sm:w-[160px]">
                 <SelectValue placeholder="Tipo" />
               </SelectTrigger>
               <SelectContent>
@@ -205,7 +205,7 @@ export default function EquipamentosPage() {
                 setPage(0);
               }}
             >
-              <SelectTrigger className="w-[160px]">
+              <SelectTrigger className="w-full sm:w-[160px]">
                 <SelectValue placeholder="Classificação" />
               </SelectTrigger>
               <SelectContent>
@@ -224,7 +224,7 @@ export default function EquipamentosPage() {
                 setPage(0);
               }}
             >
-              <SelectTrigger className="w-[160px]">
+              <SelectTrigger className="w-full sm:w-[160px]">
                 <SelectValue placeholder="Laboratório" />
               </SelectTrigger>
               <SelectContent>
@@ -306,7 +306,7 @@ export default function EquipamentosPage() {
               </div>
 
               {totalPages > 1 && (
-                <div className="mt-3 flex items-center justify-between">
+                <div className="mt-3 flex flex-col sm:flex-row items-center justify-between gap-2">
                   <p className="text-sm text-muted-foreground">
                     {filtered.length} equipamento(s) — Página {page + 1} de {totalPages}
                   </p>

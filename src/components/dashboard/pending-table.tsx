@@ -95,7 +95,7 @@ export function PendingTable({ items }: { items: PendingItem[] }) {
       </div>
 
       {totalPages > 1 && (
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-sm text-muted-foreground">
             {items.length} pendência(s) — Página {page + 1} de {totalPages}
           </p>

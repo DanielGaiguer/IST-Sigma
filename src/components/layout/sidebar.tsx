@@ -9,7 +9,7 @@ import {
   Wrench,
   ClipboardList,
   History,
-  Beaker,
+  FlaskConical,
   ChevronDown,
   ChevronRight,
   Settings,
@@ -35,7 +35,7 @@ const NAV_ITEMS = [
 
 const CADASTRO_ITEMS = [
   { label: "Unidades", icon: Landmark, href: "/cadastros/unidades" },
-  { label: "Laboratórios", icon: Beaker, href: "/cadastros/laboratorios" },
+  { label: "Laboratórios", icon: FlaskConical, href: "/cadastros/laboratorios" },
   { label: "Fabricantes", icon: Factory, href: "/cadastros/fabricantes" },
   { label: "Tipos de Equipamento", icon: Cpu, href: "/cadastros/tipos-equipamento" },
   { label: "Classificações", icon: Tag, href: "/cadastros/classificacoes" },
@@ -171,10 +171,8 @@ export function Sidebar({
       <div
         className={`flex h-14 items-center border-b ${collapsed ? "justify-center px-2" : "gap-2.5 px-4"}`}
       >
-        <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-600">
-          <Beaker className="h-4 w-4 text-white" />
-        </div>
-        {!collapsed && <span className="text-base font-bold tracking-tight">LabCare</span>}
+        <img src="/icon-150x150.png" alt="IST Sigma" className="h-8 w-8 shrink-0 rounded-lg object-cover" />
+        {!collapsed && <span className="text-base font-bold tracking-tight">IST Sigma</span>}
       </div>
 
       <nav className="flex-1 space-y-0.5 overflow-y-auto p-2">

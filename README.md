@@ -1,4 +1,4 @@
-# LabCare — Sistema de Manutenção Preventiva
+# IST Sigma — Sistema Integrado de Gestão de Manutenção de Ativos
 
 Sistema web para gestão de manutenção preventiva de equipamentos laboratoriais. Construído com Next.js 16, TypeScript, Drizzle ORM (NeonDB) e shadcn/ui.
 

@@ -104,7 +104,7 @@ export function ClassificationPieChart({ data }: { data: ClassificationDist[] })
           nameKey="nome"
           cx="50%"
           cy="50%"
-          outerRadius={80}
+          outerRadius={60}
           label={pieLabel}
           labelLine={false}
         >
@@ -135,8 +135,8 @@ export function StatusDonutChart({ data }: { data: StatusDist[] }) {
           nameKey="label"
           cx="50%"
           cy="50%"
-          innerRadius={50}
-          outerRadius={80}
+          innerRadius={40}
+          outerRadius={60}
           label={pieLabel}
           labelLine={false}
         >
@@ -157,7 +157,7 @@ export function LabBarChart({ data }: { data: LabBreakdown[] }) {
       <BarChart data={data} layout="vertical">
         <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
         <XAxis type="number" allowDecimals={false} tick={{ fontSize: 11 }} />
-        <YAxis type="category" dataKey="laboratorio" width={120} tick={{ fontSize: 11 }} />
+        <YAxis type="category" dataKey="laboratorio" width={80} tick={{ fontSize: 11 }} />
         <Tooltip />
         <Bar dataKey="quantidade" fill={BLUE} radius={[0, 4, 4, 0]} name="Preventivas" />
       </BarChart>
@@ -175,7 +175,7 @@ export function ManufacturerPieChart({ data }: { data: ManufacturerDist[] }) {
           nameKey="nome"
           cx="50%"
           cy="50%"
-          outerRadius={80}
+          outerRadius={60}
           label={pieLabel}
           labelLine={false}
         >
